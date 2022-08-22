@@ -23,17 +23,5 @@ module.exports = function (config) {
         logLevel: config.LOG_INFO,
         autoWatch: false,
         browsers,
-       /* customLaunchers: {
-            EdgeVM: {
-                base: 'VirtualBoxEdge',
-                keepAlive: true,
-                uuid: process.env.EDGE_VIRTUAL_BOX_UUID
-            },
-            IE11VM: {
-                base: 'VirtualBoxIE11',
-                keepAlive: true,
-                uuid: process.env.IE11_VIRTUAL_BOX_UUID
-            }
-        }*/
     })
 }
