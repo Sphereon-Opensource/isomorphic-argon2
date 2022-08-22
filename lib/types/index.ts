@@ -1,9 +1,9 @@
 export interface HashOptions {
-  iterations: number;
-  memory: number;
-  parallelism: number;
-  hashLength: number;
-  mode: Argon2Mode;
+  iterations?: number;
+  memory?: number;
+  parallelism?: number;
+  hashLength?: number;
+  mode?: Argon2Mode;
 }
 
 export enum Argon2Mode {

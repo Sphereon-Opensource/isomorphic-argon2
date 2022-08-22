@@ -14,11 +14,11 @@
   "scripts": {
     "test": "run-s build:* && run-s test:*",
     "test:lint": "eslint . --ext .ts",
-    "test:prettier": "prettier \"{lib,__tests__}/**/*.ts\" --list-different",
+    "test:prettier": "prettier \"{lib,__tests__}/**/*.[t|j]s\" --list-different",
     "test:node": "jest -i __tests__/nodejs.spec.ts",
     "test:browser": "karma start karma.conf.js --single-run",
     "fix": "run-s fix:*",
-    "fix:prettier": "prettier \"{lib,__tests__}/**/*.ts|README.md\" --write",
+    "fix:prettier": "prettier \"{lib,__tests__}/**/*.[ts|js|html]|README.md\" --write",
     "fix:lint": "eslint . --ext .ts --fix",
     "build": "run-s build:*",
     "build:tsc": "tsc -p tsconfig.main.json",

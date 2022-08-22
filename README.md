@@ -65,19 +65,20 @@ The example HTML file below contains a reference to the browser bundle (isomorph
 example code is in the `browser.demo.js` file below.
 
 `index.html`:
+
 ```html
 <!DOCTYPE html>
-<html lang='en'>
-<head>
-  <meta charset='UTF-8' />
-  <title>Isomorphic-Argon2 Browser Demo</title>
-</head>
-<body>
-<h1>Isomorphic-Argon2 Browser Demo</h1>
-<script src='isomorphic-argon2.browser.js'></script>
-<pre>Output should appear here. If not, please check DevTools in your browser.</pre>
-<script src='browser.demo.js'></script>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Isomorphic-Argon2 Browser Demo</title>
+  </head>
+  <body>
+    <h1>Isomorphic-Argon2 Browser Demo</h1>
+    <script src="isomorphic-argon2.browser.js"></script>
+    <pre>Output should appear here. If not, please check DevTools in your browser.</pre>
+    <script src="browser.demo.js"></script>
+  </body>
 </html>
 ```
 
@@ -117,7 +118,6 @@ The test command runs:
 - `prettier`
 - `jest`
 - `karma`
-
 
 ```shell
 yarn test

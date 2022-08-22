@@ -5,7 +5,7 @@ describe('Web Argon2', () => {
       memory: 1024,
       parallelism: 1,
       mode: Argon2Mode.Argon2id,
-      iterations: 1
+      iterations: 1,
     });
     expect(hash).toBeDefined();
     expect(hash.hex).toBeDefined();
