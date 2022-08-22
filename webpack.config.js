@@ -4,8 +4,7 @@ module.exports = {
     entry: {
         browser: './lib/isomorphic-argon2.main.ts',
     },
-    // devtool: 'inline-source-map',
-    mode: 'development',
+    mode: 'production',
     watchOptions: {
         aggregateTimeout: 600,
         ignored: /node_modules/

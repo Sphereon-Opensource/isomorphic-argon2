@@ -10,7 +10,6 @@ module.exports = function (config) {
             {pattern: '__tests__/browser.spec.js', watched: false}
         ],
         client: {
-            // jasmine: {config: 'spec/support/jasmine2dfd.json'}
         },
         plugins: [
             'karma-jasmine',
