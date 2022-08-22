@@ -1,0 +1,72 @@
+{
+  "name": "@sphereon/isomorphic-argon2",
+  "version": "0.1.1-unstable.0",
+  "description": "Argon2 hash library for Browser, NodeJs and React-Native",
+  "files": [
+    "./dist"
+  ],
+  "main": "./dist/isomorphic-argon2.main.js",
+  "browser": "./dist/isomorphic-argon2.browser.js",
+  "react-native": "./dist/isomorphic-argon2.native.js",
+  "repository": "https://github.com/Sphereon-OpenSource/isomorphic-argon2.git",
+  "author": "Sphereon BV",
+  "license": "Apache-2.0",
+  "scripts": {
+    "test": "run-s build:* && run-s test:*",
+    "test:lint": "eslint . --ext .ts",
+    "test:prettier": "prettier \"{lib,__tests__}/**/*.ts\" --list-different",
+    "test:node": "jest -i __tests__/nodejs.spec.ts",
+    "test:browser": "karma start karma.conf.js --single-run",
+    "fix": "run-s fix:*",
+    "fix:prettier": "prettier \"{lib,__tests__}/**/*.ts|README.md\" --write",
+    "fix:lint": "eslint . --ext .ts --fix",
+    "build": "run-s build:*",
+    "build:tsc": "tsc -p tsconfig.main.json",
+    "build:webpack": "webpack"
+  },
+  "dependencies": {
+    "argon2-browser": "^1.18.0",
+    "uint8arrays": "^3.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "@sphereon/react-native-argon2": "^2.0.6",
+    "@babel/preset-env": "^7.18.10",
+    "@babel/preset-typescript": "^7.18.6",
+    "@jest/create-cache-key-function": "^27.5.1",
+    "@types/jest": "^27.5.2",
+    "@typescript-eslint/eslint-plugin": "^5.33.1",
+    "@typescript-eslint/parser": "^5.33.1",
+    "babel-loader": "^8.2.5",
+    "base64-loader": "^1.0.0",
+    "eslint": "^8.21.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.26.0",
+    "ignore-loader": "^0.1.2",
+    "jasmine": "^4.3.0",
+    "jasmine-core": "^4.3.0",
+    "jest": "^27.5.1",
+    "karma": "^6.4.0",
+    "karma-chrome-launcher": "^3.1.1",
+    "karma-jasmine": "^5.1.0",
+    "karma-webpack": "^5.0.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.7.1",
+    "react-native": "^0.68.3",
+    "ts-jest": "^27.1.5",
+    "ts-loader": "^9.3.1",
+    "typescript": "^4.6.4",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "peerDependencies": {
+    "react-native": "^0.60.0",
+    "@sphereon/react-native-argon2": "^2.0.6"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "printWidth": 150
+  }
+}

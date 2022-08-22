@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig",
+  "compilerOptions": {
+    "sourceMap": false,
+    "declaration": false
+  },
+  "exclude": [
+    "__tests__/**",
+    "lib/isomorphic-argon2.native.ts",
+    "node_modules/**"
+  ]
+}
