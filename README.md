@@ -7,12 +7,12 @@
 
 [![CI](https://github.com/Sphereon-Opensource/isomorphic-argon2/actions/workflows/main.yaml/badge.svg)](https://github.com/Sphereon-Opensource/isomorphic-argon2/actions/workflows/main.yaml) [![NPM Version](https://img.shields.io/npm/v/@sphereon/isomorphic-argon2.svg)](https://npm.im/@sphereon/isomorphic-argon2)
 
-# Isomorphic Argon2 Hash generator
+# Isomorphic Argon2 hash generator
 
-Argon2 is a password-hashing function, the winner of
+Argon2 is a password-hashing function, which was the winner of
 the [Password Hashing Competition](https://www.password-hashing.net/).
 
-This is an isomorphic library which can be run in thw browser, NodeJS and React-Native.
+This is an isomorphic library which can be run in the browser, NodeJS and React-Native.
 
 For browser and NodeJS it is using the [argon2-browser](https://github.com/antelle/argon2-browser) package and for
 React-Native it is using the [@sphereon/react-native-argon2](https://github.com/Sphereon-Opensource/react-native-argon2)
@@ -20,7 +20,7 @@ package.
 
 ## NodeJS and Browser notice
 
-When using this package in the browser or a node environment, you can ignore the warning about the missing peer
+When using this package in the browser or a Node environment, you can ignore the warning about the missing peer
 dependency for `@sphereon/react-native-argon2` and `react-native`. Obviously these are not needed for non react-native
 projects.
 
@@ -30,7 +30,7 @@ Next to NodeJS and Browser support, this package also works with react-native. Y
 package using your package manager. This has to do with auto-linking not being available for transitive dependencies. We
 need some native Argon2 Android/IOS modules on React Native because WASM isn't available. As such you will have to
 install the dependency directly into your app.
-See https://github.com/react-native-community/cli/issues/870 for a discussion about this issue.
+See [this ticket](https://github.com/react-native-community/cli/issues/870) for a discussion about this issue.
 
 npm: `npm install @sphereon/react-native-argon2`
 
