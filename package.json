@@ -1,6 +1,6 @@
 {
   "name": "@sphereon/isomorphic-argon2",
-  "version": "1.0.0",
+  "version": "1.0.1-unstable.0",
   "description": "Argon2 hash library for Browser, NodeJs and React-Native",
   "files": [
     "./dist"
