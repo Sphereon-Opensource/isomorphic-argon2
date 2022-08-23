@@ -1,6 +1,6 @@
 {
   "name": "@sphereon/isomorphic-argon2",
-  "version": "0.1.1-unstable.1",
+  "version": "1.0.0",
   "description": "Argon2 hash library for Browser, NodeJs and React-Native",
   "files": [
     "./dist"
@@ -18,7 +18,7 @@
     "test:node": "jest -i __tests__/nodejs.spec.ts",
     "test:browser": "karma start karma.conf.js --single-run",
     "fix": "run-s fix:*",
-    "fix:prettier": "prettier \"{lib,__tests__}/**/*.[ts|js|html]|README.md\" --write",
+    "fix:prettier": "prettier \"{lib,__tests__}/**/*.[t|j]s\" --write",
     "fix:lint": "eslint . --ext .ts --fix",
     "build": "run-s build:*",
     "build:tsc": "tsc -p tsconfig.main.json",
