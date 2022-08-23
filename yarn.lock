@@ -1597,10 +1597,10 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@sphereon/react-native-argon2@^2.0.6":
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/@sphereon/react-native-argon2/-/react-native-argon2-2.0.6.tgz#602abb96d6d41a7f0778a3323940fca0b4fa13ed"
-  integrity sha512-5RkIzhfeDw12p1t2BcQQJyYmgtPE3CQDPLwPfwpnVGamG5R8tY4FhJRNScGzRzttHw6tbBWC1acZ2IM0swEmUQ==
+"@sphereon/react-native-argon2@^2.0.7":
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/@sphereon/react-native-argon2/-/react-native-argon2-2.0.7.tgz#c98c56128e436893e4dad9bd4539c42ec0e47001"
+  integrity sha512-FKXBV5Kic9X0VXHoOB7rHluenzV3FksVOONdliPP3uAHDuomP163wHCyHKBVgbuA3LW5r+jlmY2ROAyj8xgPIw==
 
 "@tootallnate/once@1":
   version "1.1.2"
